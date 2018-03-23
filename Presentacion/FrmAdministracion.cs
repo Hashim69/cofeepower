@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class Form1 : Form
+    public partial class FrmAdministracion : Form
     {
-        public Form1()
+        public FrmAdministracion()
         {
             InitializeComponent();
         }
 
-        private void bunifuCards1_Paint(object sender, PaintEventArgs e)
+        private void btnusuario_Click(object sender, EventArgs e)
         {
-
+            FrmUsuarioN user = new FrmUsuarioN();
+            user.ShowDialog();
         }
 
         private void bunifuTileButton1_Click(object sender, EventArgs e)
